@@ -70,7 +70,7 @@ npm start
     Open `http://localhost:3000` to view it in your browser.
 
 ## Links:
-- **Backend Hosted Link**: (https://survey-form-app-cqew.onrender.com/)[https://survey-form-app-cqew.onrender.com/]
-- **Frontend Hosted Link**: (https://survey-form-app.vercel.app/)[https://survey-form-app.vercel.app/]
+- **Backend Hosted Link**: [https://survey-form-app-cqew.onrender.com/](https://survey-form-app-cqew.onrender.com/)
+- **Frontend Hosted Link**: [https://survey-form-app.vercel.app/](https://survey-form-app.vercel.app/)
 
 
