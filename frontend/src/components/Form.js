@@ -171,83 +171,86 @@ function Form() {
 							onChange={handleChange}
 							error={errors.feedback}
 						/>
-						<h3 className="text-lg font-medium leading-9 tracking-tight text-gray-900">
-							Additional Questions:
-						</h3>
+
 						{additionalQuestions.map((question) => (
-							<div key={question.id}>
-								{question.type === "text" && (
-									<FormField
-										label={question.question}
-										type="text"
-										name={question.question
-											.replace(/\s+/g, "")
-											.toLowerCase()}
-										value={
-											formData[
-												question.question
-													.replace(/\s+/g, "")
-													.toLowerCase()
-											]
-										}
-										onChange={handleChange}
-										error={
-											errors[
-												question.question
-													.replace(/\s+/g, "")
-													.toLowerCase()
-											]
-										}
-									/>
-								)}
-								{question.type === "dropdown" && (
-									<SelectField
-										label={question.question}
-										name={question.question
-											.replace(/\s+/g, "")
-											.toLowerCase()}
-										value={
-											formData[
-												question.question
-													.replace(/\s+/g, "")
-													.toLowerCase()
-											]
-										}
-										onChange={handleChange}
-										error={
-											errors[
-												question.question
-													.replace(/\s+/g, "")
-													.toLowerCase()
-											]
-										}
-										options={question.options}
-									/>
-								)}
-								{question.type === "number" && (
-									<FormField
-										label={question.question}
-										type="number"
-										name={question.question
-											.replace(/\s+/g, "")
-											.toLowerCase()}
-										value={
-											formData[
-												question.question
-													.replace(/\s+/g, "")
-													.toLowerCase()
-											]
-										}
-										onChange={handleChange}
-										error={
-											errors[
-												question.question
-													.replace(/\s+/g, "")
-													.toLowerCase()
-											]
-										}
-									/>
-								)}
+							<div>
+								<h3 className="text-lg font-medium leading-9 tracking-tight text-gray-900">
+									Additional Questions:
+								</h3>
+								<div key={question.id}>
+									{question.type === "text" && (
+										<FormField
+											label={question.question}
+											type="text"
+											name={question.question
+												.replace(/\s+/g, "")
+												.toLowerCase()}
+											value={
+												formData[
+													question.question
+														.replace(/\s+/g, "")
+														.toLowerCase()
+												]
+											}
+											onChange={handleChange}
+											error={
+												errors[
+													question.question
+														.replace(/\s+/g, "")
+														.toLowerCase()
+												]
+											}
+										/>
+									)}
+									{question.type === "dropdown" && (
+										<SelectField
+											label={question.question}
+											name={question.question
+												.replace(/\s+/g, "")
+												.toLowerCase()}
+											value={
+												formData[
+													question.question
+														.replace(/\s+/g, "")
+														.toLowerCase()
+												]
+											}
+											onChange={handleChange}
+											error={
+												errors[
+													question.question
+														.replace(/\s+/g, "")
+														.toLowerCase()
+												]
+											}
+											options={question.options}
+										/>
+									)}
+									{question.type === "number" && (
+										<FormField
+											label={question.question}
+											type="number"
+											name={question.question
+												.replace(/\s+/g, "")
+												.toLowerCase()}
+											value={
+												formData[
+													question.question
+														.replace(/\s+/g, "")
+														.toLowerCase()
+												]
+											}
+											onChange={handleChange}
+											error={
+												errors[
+													question.question
+														.replace(/\s+/g, "")
+														.toLowerCase()
+												]
+											}
+										/>
+									)}
+								</div>
 							</div>
 						))}
 
