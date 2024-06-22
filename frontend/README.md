@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Survey Form Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a survey form application built using React for the frontend and Node.js with Express for the backend. It allows users to fill out a survey based on selected topics and collects their responses.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+-   **Dynamic Form Fields**: Users can select a survey topic (Technology, Health, Education) and fill out topic-specific questions.
+-   **Form Validation**: Client-side validation ensures that required fields are filled and valid before submission.
+-   **Additional Questions**: Depending on the selected survey topic, additional questions are dynamically loaded and displayed.
+-   **Submission Summary**: After submission, a summary of entered data along with additional questions is displayed.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   **Frontend**: React.js, Axios
+-   **Backend**: Node.js, Express.js
+-   **Styling**: Tailwind CSS
+-   **Middleware**: CORS (for enabling cross-origin requests)
+-   **Validation**: Custom form validation using React hooks
+-   **Data Storage**: Data is stored temporarily in memory
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+-   Node.js (v14 or later)
+-   npm (v6 or later) or yarn (v1.22 or later)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/Trivarna13/survey-form-app.git
+```
 
-### `npm run eject`
+2. **Install dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   For the frontend (React):
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+cd frontend
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-   For the backend (Node.js with Express):
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+cd backend
+npm install
+```
 
-## Learn More
+3. **Run the application:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   Start the backend server (in the `backend\src` directory):
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+node server.js
+```
 
-### Code Splitting
+-   Start the frontend developmen server (in the `frontend` directory):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+npm start
+```
 
-### Analyzing the Bundle Size
+4. **Open the application:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Open `http://localhost:3000` to view it in your browser.
